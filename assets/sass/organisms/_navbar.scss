@@ -127,6 +127,9 @@
       .navbar-nav {
         border: none;
         & > li {
+          &:last-child a {
+            color: $gray-light;
+          }
           a {
             padding-left: 0;
             color: $text-color;
