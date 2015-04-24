@@ -1,8 +1,6 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+    $persian-red: "#c82b2d"
+    $tuatara: "#3c3c3b"
+    $alabaster: "#f9f9f9"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"

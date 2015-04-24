@@ -1,0 +1,32 @@
+// Typo
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AvenirNext-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvenirNext-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AvenirNext-Bold.svg#92550229aad14ffa2dc273e49410d17e') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  bold;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/AvenirNext-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AvenirNext-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/AvenirNext-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AvenirNext-Medium.svg#5ff54762f5b331a06e3ae1fbf17e8ff4') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  normal;
+}
+
+
+// Colors
+$persian-red: #c82b2d;
+$tuatara: #3c3c3b;
+$alabaster: #f9f9f9;
+
+$white: #fff;

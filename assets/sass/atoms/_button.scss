@@ -1,0 +1,18 @@
+.btn-default {
+  color: $link-color;
+  background: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+  .bg-primary & {
+    border-color: $white;
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+  }
+}
