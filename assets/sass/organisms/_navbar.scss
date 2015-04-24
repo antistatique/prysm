@@ -20,13 +20,23 @@
       }
     }
   }
+  .container-fluid {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
   @media only screen and (max-width: $screen-xs-max) {
-    position: fixed;
-    z-index: 99999999999;
-    width: 100%;
+    button {
+      position: fixed;
+      right: 0;
+      z-index: 99999999999;
+    }
 
     .navbar-header {
+      position: relative;
       height: 58px;
     }
   }
