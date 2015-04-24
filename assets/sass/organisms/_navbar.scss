@@ -61,7 +61,14 @@
         float: none;
         text-align: left;
         &:first-child a {padding-top: 0;}
-        &:last-child a {padding-bottom: 0;}
+        &:last-child a {
+          display: inline;
+          padding-right: 0;
+          padding-bottom: 0;
+          line-height: 1;
+          color: $text-muted;
+          & + a {padding-left: 0;}
+        }
         &.active {
           & > a {
             font-weight: bold;
@@ -89,10 +96,6 @@
     }
   }
   .container-wrapper {
-    .container {
-      height: 0;
-    }
-
     .navbar-list {
       top: auto;
       left: auto;
