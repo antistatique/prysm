@@ -11,10 +11,21 @@ body {
 }
 
 .svg-layers {
-  position: absolute;
-  right: 0;
-  top: 50px;
-  width: 400px;
+  width: 300px;
+  @media only screen and (max-width: $screen-xs-max) {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    position: absolute;
+    right: 0;
+    top: 150px;
+  }
+  @media only screen and (min-width: $screen-lg-min) {
+    top: 50px;
+    width: 400px;
+  }
 
   #first {
     transform: translate(0,-100px);
