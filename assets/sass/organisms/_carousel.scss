@@ -1,10 +1,16 @@
 .carousel-control {
-  left: -60px;
-  &.left,
-  &.right {
-    background: none;
-  }
-  &.right {
-    right: -60px;
+    &.left,
+    &.right {
+      background: none;
+    }
+    left: -15px;
+    &.right {
+      right: -15px;
+    }
+  @media only screen and (min-width: $screen-sm-min) {
+    left: -60px;
+    &.right {
+      right: -60px;
+    }
   }
 }
