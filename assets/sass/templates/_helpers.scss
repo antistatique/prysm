@@ -2,6 +2,12 @@
   background: $gray-lighter;
 }
 
+.bg-logo-white {
+  background-image: url(../svg/logo-bg-white.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
 .spacer {
   height: 65px;
   &.spacer-xl {height: 120px;}

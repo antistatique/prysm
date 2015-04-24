@@ -10,7 +10,8 @@ module.exports = function(gulp, $, config, browserSync, runSequence) {
       server: {
         baseDir: [config.app.basedir],
       },
-      open: false
+      open: false,
+      notify: false
     });
     gulp.watch([config.assets + 'sass/**/*.scss'], function() {
       runSequence('styles', 'styleguide', reload);

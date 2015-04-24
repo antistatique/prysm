@@ -12,6 +12,12 @@
     $('#textarea-help').html(text_remaining + string);
   });
 
-  // FOCUS ME
+  // FOCUS ME. -Footer image
   $('.focuspoint').focusPoint();
+
+  // STICK ME. -Navbar content
+  $("#sidebar-nav").stick_in_parent({
+    parent: '#container-wrapper'
+  });
+
 }());
