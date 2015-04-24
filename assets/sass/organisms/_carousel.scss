@@ -1,0 +1,10 @@
+.carousel-control {
+  left: -60px;
+  &.left,
+  &.right {
+    background: none;
+  }
+  &.right {
+    right: -60px;
+  }
+}

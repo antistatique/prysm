@@ -1,0 +1,21 @@
+header.header {
+  padding-bottom: 50px;
+  position: relative;
+  background-image: url(../svg/logo-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 670px;
+
+  h1 {
+    padding: 20px 0 70px 0;
+  }
+  img {
+    max-width: 320px;
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-bottom: 170px;
+    h1 {
+      padding: 160px 0 170px 0;
+    }
+  }
+}

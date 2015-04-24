@@ -1,0 +1,25 @@
+blockquote {
+  position: relative;
+  padding-left: 50px;
+
+
+  p {
+    margin-bottom: 0;
+  }
+  footer {
+    float: right;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &:before {
+    content: '“';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 70px;
+    font-weight: bold;
+    opacity: .4;
+    z-index: 10;
+  }
+}
