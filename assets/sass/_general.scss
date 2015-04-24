@@ -5,3 +5,28 @@
 body {
   position: relative;
 }
+
+.svg-container {
+  position: relative;
+}
+
+.svg-layers {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 400px;
+
+  #first {
+    transform: translate(0,-100px);
+    transition: all 1s;
+  }
+  #third {
+    transform: translate(0,100px);
+    transition: all 1s;
+  }
+  #first, #third {
+    &.get-together {
+      transform: translate(0,0);
+    }
+  }
+}

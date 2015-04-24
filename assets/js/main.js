@@ -20,4 +20,13 @@
     parent: '#container-wrapper'
   });
 
+  var svgTriggered = false;
+  $('body').on('activate.bs.scrollspy', function (item) {
+    if ($(item.target).hasClass('svg-trigger') && !svgTriggered) {
+      svgTriggered = true;
+      $('#first').css('transform', 'translate(0,0)');
+      $('#third').css('transform', 'translate(0,0)');
+    }
+  });
+
 }());
