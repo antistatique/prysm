@@ -38,12 +38,13 @@
   // scroll events
   var header_height = $('header.header').height() * 2 / 3;
   $(window).scroll(function () {
-    var scroll_position = $(window).scrollTop() - 150;
-    var diff = header_height - scroll_position;
-    var opacity = scroll_position / header_height > 1 ? 1 : scroll_position / header_height;
-    $('#navbar-main').css('opacity', (1 - opacity));
-    $('#sidebar-nav').css('opacity', opacity);
-
+    if ($(window).width() > 767 ) {
+      var scroll_position = $(window).scrollTop() - 150;
+      var diff = header_height - scroll_position;
+      var opacity = scroll_position / header_height > 1 ? 1 : scroll_position / header_height;
+      $('#navbar-main').css('opacity', (1 - opacity));
+      $('#sidebar-nav').css('opacity', opacity);
+    }
   });
 
 }());
