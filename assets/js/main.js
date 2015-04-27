@@ -22,16 +22,16 @@
 
   var svgTriggered = false;
   $('body').on('activate.bs.scrollspy', function (item) {
-    if ($(item.target).hasClass('svg-trigger') && !svgTriggered) {
-      svgTriggered = true;
+    if ($(window).width() > 767 ) {
+      if ($(item.target).hasClass('svg-trigger') && !svgTriggered) {
+        svgTriggered = true;
+        $('.svg-container').addClass('get-together');
+      } else if (!$(item.target).hasClass('svg-trigger') && svgTriggered) {
+        svgTriggered = false;
+        $('.svg-container').removeClass('get-together');
+      }
+    } else {
       $('.svg-container').addClass('get-together');
-      // $('#first').css('transform', 'translate(0,0)');
-      // $('#third').css('transform', 'translate(0,0)');
-    } else if (!$(item.target).hasClass('svg-trigger') && svgTriggered) {
-      svgTriggered = false;
-      $('.svg-container').removeClass('get-together');
-      // $('#first').css('transform', 'translate(0,150px)');
-      // $('#third').css('transform', 'translate(0,-150px)');
     }
   });
 
