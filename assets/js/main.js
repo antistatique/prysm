@@ -39,15 +39,11 @@
   var header_height = $('header.header').height() * 2 / 3;
   $(window).scroll(function () {
     var scroll_position = $(window).scrollTop() - 150;
-    console.log(scroll_position);
     var diff = header_height - scroll_position;
-    if (scroll_position > 0 && diff >= 0) {
-      $('#navbar-main').css('opacity', (1 - (scroll_position / header_height)));
-      $('#sidebar-nav').css('opacity', ((scroll_position / header_height)));
-    }
-    if (scroll_position < 0) {
-      $('#sidebar-nav').css('opacity', 0);
-    }
+    var opacity = scroll_position / header_height > 1 ? 1 : scroll_position / header_height;
+    $('#navbar-main').css('opacity', (1 - opacity));
+    $('#sidebar-nav').css('opacity', opacity);
+
   });
 
 }());
