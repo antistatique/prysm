@@ -16,8 +16,7 @@
     color: $white;
     &:hover,
     &:focus {
-      color: transparentize($white, .4);
-      border-color: transparentize($white, .4);
+      background: transparentize($white, .8);
     }
   }
 }
