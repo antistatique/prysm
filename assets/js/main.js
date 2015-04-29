@@ -47,4 +47,11 @@
     }
   });
 
+  // menu scrollto
+  $('.navbar-list').on('click', 'a', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $(window).scrollTo(target, '400ms');
+  });
+
 }());

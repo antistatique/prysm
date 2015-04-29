@@ -23,7 +23,8 @@
       "bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js",
       "bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js",
       "bower_components/jquery-focuspoint/js/jquery.focuspoint.min.js",
-      "bower_components/sticky-kit/jquery.sticky-kit.min.js"
+      "bower_components/sticky-kit/jquery.sticky-kit.min.js",
+      "bower_components/jquery.scrollTo/jquery.scrollTo.js"
     ],
     "fonts": [
       "bower_components/bootstrap-sass/assets/fonts/bootstrap/*",

@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "jquery-focuspoint": "~1.1.1",
-    "sticky-kit": "~1.1.1"
+    "sticky-kit": "~1.1.1",
+    "jquery.scrollTo": "~2.1.0"
   }
 }
