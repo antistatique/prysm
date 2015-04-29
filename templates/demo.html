@@ -21,7 +21,7 @@
   <body data-spy="scroll" data-target="#sidebar-nav" data-offset="200">
 
 
-    <header class="header text-center bg-primary">
+    <header class="header text-center bg-primary" id="top">
   <div class="container">
     <nav class="navbar navbar-default">
       <div class="navbar-header">
@@ -35,8 +35,8 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse navbar-list" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li><a href="#nous">Nous</a></li>
-            <li><a href="#approche-prysm">L'approche Prysm</a></li>
+            <li><a href="#nous">Pourquoi Prysm</a></li>
+            <li><a href="#approche-prysm">Notre approche</a></li>
             <li><a href="#services">Nos Services</a></li>
             <li><a href="#clients">Nos Clients</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -48,7 +48,7 @@
     <h1>
       <img src="../build/svg/logo.svg" onerror="this.onerror=null; this.src='../build/img/logo.png'" alt="PRYSM" />
     </h1>
-    <p>Stratégies fiscales sur mesure depuis 2004.</p>
+    <p>Stratégies fiscales sur mesure depuis 2004</p>
     <div class="spacer spacer-xs"></div>
     <a href="#contact" class="btn btn-default">Contact</a>
   </div>
@@ -58,15 +58,17 @@
   <div class="container">
     <div class="row">
       <div class="navbar-list hidden-xs hidden-sm" id="sidebar-nav" aria-hidden="true">
-        <img class="img-responsive" src="../build/svg/logo-small-red.svg" onerror="this.onerror=null; this.src='../build/img/logo-small-red.png'" alt="PRYSM" />
-        <ul class="nav navbar-nav">
-          <li><a href="#nous">Nous</a></li>
-          <li class="svg-trigger"><a href="#approche-prysm">L'approche Prysm</a></li>
-          <li><a href="#services">Nos Services</a></li>
-          <li><a href="#clients">Nos Clients</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">FR</a> <a href="#">EN</a></li>
-        </ul>
+        <div class="clearfix">
+          <a href="#top"><img class="img-responsive" src="../build/svg/logo-small-red.svg" onerror="this.onerror=null; this.src='../build/img/logo-small-red.png'" alt="PRYSM" /></a>
+          <ul class="nav navbar-nav">
+            <li><a href="#nous">Pourquoi Prysm</a></li>
+            <li class="svg-trigger"><a href="#approche-prysm">Notre approche</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#clients">Nos Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">FR</a> <a href="#">EN</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -103,11 +105,11 @@
 
         <h3>Qualité suisse</h3>
 
-        <p>Nous aimons le travail bien fait et mettons tout en œuvre pour vous servir avec le plus grand soin. Nous prenons le temps de vous rencontrer, de vous écouter et de comprendre vos attentes spécifiques. Notre savoir-faire technique et notre approche sur mesure nous permettent de proposer une stratégie individualisée à chacun de nos clients.</p>
+        <p>Nous aimons le travail bien fait et mettons tout en œuvre pour vous servir avec le plus grand soin. <strong>Nous prenons le temps</strong> de vous rencontrer, de vous écouter et de comprendre vos attentes spécifiques. Notre savoir-faire technique et notre approche sur mesure nous permettent de proposer une <strong>stratégie individualisée</strong> à chacun de nos clients.</p>
 
         <h3>Indépendance sans compromis</h3>
 
-        <p>Nous avons fondé Prysm afin de pouvoir préserver notre liberté d’action: travailler en toute autonomie, de façon flexible et réellement personnalisée. Nous n’avons de comptes à rendre qu’à nos clients et avons adopté un mode d’organisation agile, qui permet de vous consacrer un maximum de temps.</p>
+        <p>Nous avons fondé Prysm afin de pouvoir préserver <strong>notre liberté d’action</strong>: travailler en toute autonomie, de façon flexible et réellement personnalisée. Nous n’avons de comptes à rendre qu’à nos clients et avons adopté un mode d’organisation agile, qui permet de <strong>vous consacrer un maximum de temps</strong>.</p>
 
         <div class="spacer spacer-sm"></div>
       </div>
@@ -123,56 +125,66 @@
 
           <h3>Stratégie fiscale</h3>
 
-          <p>Optimiser votre fiscalité de façon efficace ne peut pas se faire au coup par coup. C’est une affaire de dosages subtils et d’efforts coordonnés qui ne se conçoit que comme une planification dans la durée. Pour cela, nous nous appuyons sur tous les moyens à disposition:</p>
+          <p>Optimiser votre fiscalité de façon efficace ne peut pas se faire au coup par coup. C’est une affaire de dosages subtils et d’efforts coordonnés qui ne se conçoit que comme une planification dans la durée. Pour cela, nous nous appuyons sur tous les moyens à disposition: <a href="#strategie-list" data-toggle="collapse" aria-expanded="false">En savoir plus <span class="caret"></span></a></p>
 
-          <ul>
+          <ul class="collapse list-prysm" id="strategie-list">
             <li>investissement et financement immobilier </li>
             <li>retraite et prévoyance </li>
             <li>succession et héritage</li>
             <li>structuration du patrimoine </li>
             <li>transmission d’entreprise</li>
           </ul>
+          <div class="clearfix"></div>
 
           <h3>Assistance fiscale</h3>
 
-          <p>Notre motivation est de faciliter la vie de nos clients. C’est pourquoi notre service d’assistance fiscale vous libère de toutes les tâches liées à la conception, la préparation et le suivi de la déclaration d’impôt.<br>
-          Nous prenons aussi en charge les échanges avec les autorités, pour qui Prysm constitue un label de qualité et de confiance.</p>
+          <p>Notre motivation est de faciliter la vie de nos clients. C’est pourquoi notre service d’assistance fiscale vous libère de toutes les tâches liées à la conception, la préparation et le suivi de la déclaration d’impôt. Nous prenons aussi en charge les échanges avec les autorités, pour qui Prysm constitue un label de qualité et de confiance. <a href="#assistance-list" data-toggle="collapse" aria-expanded="false">En savoir plus <span class="caret"></span></a></p>
+
+          <ul class="collapse list-prysm" id="assistance-list">
+            <li>déclaration d’impôt et suivi</li>
+            <li>calculs d’impôt</li>
+            <li>gestion des délais légaux et recours</li>
+            <li>formalités en vue d’éviter les doubles impositions internationales</li>
+            <li>représentation vis-à-vis des autorités</li>
+          </ul>
 
           <h3>Services pour entreprises multinationales</h3>
 
-          <p>Nous conseillons les équipes RH sur les implications fiscales des rémunérations et avantages offerts aux cadres et expatriés. <br>
-          Nous négocions les accords fiscaux nécessaires avec les autorités et apportons à ces équipes un soutien administratif à différents niveaux:</p>
+          <p>Nous conseillons les équipes RH sur les implications fiscales des rémunérations et avantages offerts aux cadres et expatriés. Nous négocions les accords fiscaux nécessaires avec les autorités et apportons à ces équipes un soutien administratif à différents niveaux: <a href="#multinationales-list" data-toggle="collapse" aria-expanded="false">En savoir plus <span class="caret"></span></a></p>
 
-          <ul>
+          <ul class="collapse list-prysm" id="multinationales-list">
             <li>attestations des participations collaborateurs</li>
             <li>calcul de gross up</li>
-            <li>simulation</li>
+            <li>simulations fiscales</li>
             <li>assistance fiscale aux collaborateurs</li>
           </ul>
+          <div class="clearfix"></div>
 
           <h3>Accompagnement d’entrepreneurs et de PME</h3>
 
-          <p>Outre un conseil fiscal et des services de soutien adaptés aux problématiques des petites entreprises, nous accompagnons également les propriétaires d’entreprises et les cadres à travers toute une gamme de services fiduciaires:</p>
+          <p>Nos prestations de conseil fiscal et nos services de soutien conviennent aussi aux problématiques des petites entreprises. Nous accompagnons les entrepreneurs et les cadres à travers toute une gamme de services fiduciaires: <a href="#pme-list" data-toggle="collapse" aria-expanded="false">En savoir plus <span class="caret"></span></a></p>
 
-          <ul>
+          <ul class="collapse list-prysm" id="pme-list">
             <li>accompagnement à la création d’entreprise</li>
             <li>pay-roll et comptabilité</li>
             <li>assistance fiscale</li>
+            <li>politique de rémunération</li>
           </ul>
+          <div class="clearfix"></div>
 
           <div class="spacer spacer-md"></div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
 <div class="bg-primary clearfix">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2" id="clients">
         <div class="spacer spacer-sm"></div>
 
-        <h2>Nos Clients</h2>
+        <h2>Nos clients</h2>
 
         <p>Nous conseillons les personnes qui souhaitent obtenir une vision fiscale dans la durée. Les compétences pointues de notre équipe sont particulièrement appréciées dans les situations complexes: expatriés, cadres supérieurs ou propriétaires d’entreprises.</p>
 
@@ -242,7 +254,8 @@
       <div class="row">
         <div class="col-sm-6">
           <address>
-            Grand-Pont 8 / PO Box 7123<br>
+            Grand-Pont 8<br>
+            Case postale 7123<br>
             CH-1002 Lausanne
           </address>
         </div>
@@ -255,6 +268,7 @@
     </div>
   </div>
 </div>
+</div><!-- .container-wrapper -->
 <div class="bg-foggy clearfix">
   <div class="container">
     <div class="row">

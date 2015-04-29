@@ -38,13 +38,20 @@
   // scroll events
   var header_height = $('header.header').height() * 2 / 3;
   $(window).scroll(function () {
-    if ($(window).width() > 767 ) {
+    if ($(window).width() > 991 ) {
       var scroll_position = $(window).scrollTop() - 150;
       var diff = header_height - scroll_position;
       var opacity = scroll_position / header_height > 1 ? 1 : scroll_position / header_height;
       $('#navbar-main').css('opacity', (1 - opacity));
       $('#sidebar-nav').css('opacity', opacity);
     }
+  });
+
+  // menu scrollto
+  $('.navbar-list').on('click', 'a', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $(window).scrollTo(target, '400ms');
   });
 
 }());
