@@ -1,0 +1,24 @@
+.readmore {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 21px;
+  border: 1px solid $brand-primary;
+
+  &:before {
+    content: 'fermer';
+  }
+  span {
+    display: none;
+  }
+  &.collapsed {
+    &:before {
+      content: '';
+    }
+    span {
+      display: inline;
+    }
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}

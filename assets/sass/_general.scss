@@ -35,6 +35,9 @@ body {
     transform: translate(0,-150px);
     transition: all 1s;
   }
+  .ie9 & {
+    top: 0;
+  }
 }
 
 .get-together {
