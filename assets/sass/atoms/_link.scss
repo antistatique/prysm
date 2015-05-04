@@ -7,6 +7,9 @@
   &:before {
     content: 'fermer';
   }
+  &.en:before {
+    content: 'close';
+  }
   span {
     display: none;
   }

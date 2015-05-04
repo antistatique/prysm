@@ -2,8 +2,7 @@
 
 (function(){
   var text_max = 250;
-  var string = ' caractères restants.';
-  $('#textarea-help').html(text_max + string);
+  $('#textarea-help').html(text_max);
 
   $('#fieldihhlst').keyup(function() {
     var text_length = $('#fieldihhlst').val().length;
@@ -49,9 +48,11 @@
 
   // menu scrollto
   $('.navbar-list').on('click', 'a', function(e) {
-    e.preventDefault();
-    var target = $(this).attr('href');
-    $(window).scrollTo(target, '400ms');
+    if (!$(this).hasClass('real-link')) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      $(window).scrollTo(target, '400ms');
+    }
   });
 
 }());
