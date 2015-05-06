@@ -28,11 +28,11 @@ body {
   }
 
   #first {
-    transform: translate(0,150px);
+    transform: translate(0,60px);
     transition: all 1s;
   }
   #third {
-    transform: translate(0,-150px);
+    transform: translate(0,-60px);
     transition: all 1s;
   }
 }
