@@ -20,6 +20,7 @@ require(config.tasks + 'clean')(gulp, $, config, del);                         /
 require(config.tasks + 'styleguide')(gulp, $, config, assemble);               // $ gulp styleguide
 require(config.tasks + 'server')(gulp, $, config, browserSync, runSequence);   // $ gulp serve
 require(config.tasks + 'gh-pages')(gulp, $, config);                           // $ gulp deploy
+require(config.tasks + 'site')(gulp, $, config);                           // $ gulp deploy
 
 
 /**
@@ -44,5 +45,5 @@ gulp.task('build',['clean'], function() {
  * Default task
  */
 gulp.task('default', ['clean'], function(done){
-  runSequence(['css-vendors', 'js-vendors', 'fonts-vendors', 'polyfills-vendors', 'img', 'styles', 'scripts', 'styleguide-styles', 'styleguide-scripts'], 'styleguide', done);
+  runSequence(['css-vendors', 'js-vendors', 'fonts-vendors', 'polyfills-vendors', 'img', 'styles', 'scripts', 'styleguide-styles', 'styleguide-scripts'], ['styleguide', 'site'], done);
 });
