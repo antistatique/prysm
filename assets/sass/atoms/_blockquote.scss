@@ -9,8 +9,11 @@ blockquote {
   footer {
     float: right;
     color: $white;
-    text-transform: uppercase;
-    font-weight: bold;
+    margin-top: 20px;
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
   &:before {
     content: '“';
