@@ -56,6 +56,9 @@
   });
 
   $('#scroll-contact').click(function (e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $(window).scrollTo(target, '400ms');
     console.log('hello');
   });
 
