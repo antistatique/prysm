@@ -6,7 +6,7 @@ module.exports = function(gulp, $, config) {
    return gulp.src([
       config.build + '/**/*',
     ])
-     .pipe(gulp.dest(config.app.basedir + '/build'));
+     .pipe(gulp.dest(config.app.ghpages + '/build'));
  });
 
  gulp.task('site-files', function() {
@@ -14,7 +14,7 @@ module.exports = function(gulp, $, config) {
       'assets/.htaccess',
       'styleguide/templates/*'
     ])
-     .pipe(gulp.dest(config.app.basedir));
+     .pipe(gulp.dest(config.app.ghpages));
  });
 
  gulp.task('site', ['site-build', 'site-files']);

@@ -45,5 +45,5 @@ gulp.task('build',['clean'], function() {
  * Default task
  */
 gulp.task('default', ['clean'], function(done){
-  runSequence(['css-vendors', 'js-vendors', 'fonts-vendors', 'polyfills-vendors', 'img', 'styles', 'scripts', 'styleguide-styles', 'styleguide-scripts'], ['styleguide', 'site'], done);
+  runSequence(['css-vendors', 'js-vendors', 'fonts-vendors', 'polyfills-vendors', 'img', 'styles', 'scripts', 'styleguide-styles', 'styleguide-scripts'], 'styleguide', done);
 });
