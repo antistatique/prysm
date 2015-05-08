@@ -55,4 +55,8 @@
     }
   });
 
+  $('#scroll-contact').click(function (e) {
+    console.log('hello');
+  });
+
 }());
