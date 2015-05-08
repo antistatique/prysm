@@ -5,3 +5,5 @@ dist
 /styleguide
 .sass-cache
 *.DS_Store
+
+.publish
