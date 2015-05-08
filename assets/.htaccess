@@ -3,8 +3,8 @@
 #RewriteCond %{HTTP:Accept-Language} (^en) [NC]
 #RewriteRule .* http://prysm.dev/index-en.html [R,L]
 
-DirectoryIndex index
-AddLanguage en .en
-AddLanguage fr .fr
-LanguagePriority fr en
-DefaultLanguage fr
+#DirectoryIndex index
+#AddLanguage en .en
+#AddLanguage fr .fr
+#LanguagePriority fr en
+#DefaultLanguage fr

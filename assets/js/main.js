@@ -8,7 +8,7 @@
     var text_length = $('#fieldihhlst').val().length;
     var text_remaining = text_max - text_length;
 
-    $('#textarea-help').html(text_remaining + string);
+    $('#textarea-help').html(text_remaining);
   });
 
   // FOCUS ME. -Footer image
