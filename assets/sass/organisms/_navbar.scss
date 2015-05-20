@@ -98,7 +98,8 @@
             font-weight: bold;
             color: $white;
             background: none;
-            &:hover {
+            &:hover,
+            &:focus {
               background: none;
               color: transparentize($white, .2);
             }
@@ -152,7 +153,8 @@
             padding-left: 0;
             padding-right: 0;
             color: $text-color;
-            &:hover {
+            &:hover,
+            &:focus {
               color: $link-color;
               background: none;
             }
