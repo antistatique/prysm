@@ -1,8 +1,8 @@
 {
   "app": {
     "env": "dev",
-    "basedir": "site",
-    "ghpages": "site"
+    "basedir": "styleguide",
+    "ghpages": "styleguide"
   },
   "vendors": {
     "css": [
@@ -43,7 +43,7 @@
   ],
   "tasks":  "./tasks/",
   "assets": "assets/",
-  "build": "build/",
+  "build": "site/build/",
   "browsers": ["last 2 versions", "safari 5", "ie 8", "ie 9", "ff 27", "opera 12.1"],
   "styleguide": {
     "assets": "bower_components/fabricator/src/assets/fabricator/",
