@@ -1,24 +1,20 @@
-.readmore {
+.readmore-button {
   display: inline-block;
   padding: 5px 25px;
   border-radius: 21px;
   border: 1px solid $brand-primary;
-
-  &:before {
-    content: 'fermer';
+  &.readless{
+    display: inline-block;
   }
-  &.en:before {
-    content: 'close';
-  }
-  span {
-    display: none;
+  &.readmore{
+      display: none;
   }
   &.collapsed {
-    &:before {
-      content: '';
+    &.readless{
+      display: none;
     }
-    span {
-      display: inline;
+    &.readmore{
+      display: inline-block;
     }
   }
   &:hover, &:focus {

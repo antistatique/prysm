@@ -12,7 +12,8 @@ module.exports = function(gulp, $, config) {
  gulp.task('site-files', function() {
    return gulp.src([
       'assets/.htaccess',
-      'styleguide/templates/*'
+      'styleguide/templates/*',
+      'assets/favicon/*'
     ])
      .pipe(gulp.dest(config.app.ghpages));
  });
