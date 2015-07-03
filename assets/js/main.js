@@ -1,16 +1,6 @@
 'user strict';
 
 (function(){
-  var text_max = 250;
-  $('#textarea-help').html(text_max);
-
-  $('#fieldihhlst').keyup(function() {
-    var text_length = $('#fieldihhlst').val().length;
-    var text_remaining = text_max - text_length;
-
-    $('#textarea-help').html(text_remaining);
-  });
-
   // FOCUS ME. -Footer image
   $('.focuspoint').focusPoint();
 

@@ -1,0 +1,30 @@
+---
+dest: site/contact.php
+layout: clean
+---
+<?php
+
+$lang      = $_POST['lang'];
+$name      = $_POST['name'];
+$phone     = $_POST['phone'];
+$email     = $_POST['email'];
+$message   = $_POST['message'];
+
+$from      = 'contact@prysm.ch';
+$to        = 'yann@antistatique.net';
+$subject   = 'pryms.ch - Nouveau contact';
+$headers   = 'From: '.$from."\r\n".
+             'X-Mailer: PHP/'.phpversion();
+$content   = "Une personne a pris contact avec vous\n\nNom : ".$name."\nN° de téléphone : ".$phone."\nE-mail : ".$email."\n\nMessage :\n".$message."\n\n---------\nceci est un message automatique depuis http://prysm.ch";
+
+if (mail ($to, $subject, $content, $headers)) {
+  if ($lang == 'fr') {
+    header('Location: http://prysm.ch/confirmation.fr.html', true, 302);
+    exit();
+  } else {
+    header('Location: http://prysm.ch/confirmation.html', true, 302);
+    exit();
+  }
+} else {
+  echo 'An error happened, try later.';
+}

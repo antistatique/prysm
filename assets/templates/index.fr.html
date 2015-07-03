@@ -311,33 +311,33 @@ dest: site/index.fr.php
   <div class="container">
     <div class="row">
       <div class="col-sm-5">
-        <form action="http://mailing.antistatique.net/t/r/s/ihkutkk/" method="post" id="subForm">
+        <form action="/contact.php" method="post" id="subForm">
           <div class="spacer spacer-md"></div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
-                <label for="fieldName">Prénom, Nom</label><br />
-                <input id="fieldName" class="form-control" name="cm-name" type="text" />
+                <label for="name">Prénom, Nom</label><br />
+                <input id="name" class="form-control" name="name" type="text" />
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label for="fieldihhlsk">Téléphone</label><br />
-                <input id="fieldihhlsk" class="form-control" name="cm-f-ihhlsk" type="tel" />
+                <label for="phone">Téléphone</label><br />
+                <input id="phone" class="form-control" name="phone" type="tel" />
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label for="fieldEmail">Email</label><br />
-            <input id="fieldEmail" class="form-control" name="cm-ihkutkk-ihkutkk" type="email" required />
+            <label for="email">Email</label><br />
+            <input id="email" class="form-control" name="email" type="email" required />
           </div>
           <div class="form-group">
-            <label for="fieldihhlst">Message</label><br />
-            <textarea maxlength="250" name="cm-f-ihhlst" class="form-control" id="fieldihhlst" cols="30" rows="3"></textarea>
-            <p class="help-block"><span id="textarea-help"></span> caractères restants.</p>
+            <label for="message">Message</label><br />
+            <textarea maxlength="250" name="message" class="form-control" id="message" cols="30" rows="3"></textarea>
           </div>
+          <input type="hidden" name="lang" value="en">
           <div class="clearfix">
-            <button class="btn btn-primary pull-right" type="submit">Envoyer</button>
+            <button class="btn btn-primary pull-right" type="submit">Send</button>
           </div>
         </form>
         <div class="spacer spacer-md"></div>
